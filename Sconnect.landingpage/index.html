@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sconnect - Conectando Talentos em Saquarema</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <span class="logo-s">S</span><span class="logo-connect">connect</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#problema">O Problema</a></li>
+                <li><a href="#solucao">Nossa Solução</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#impacto">Impacto</a></li>
+                <li><a href="#cta">Começar</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-outline" id="loginBtn">Entrar</button>
+                <button class="btn btn-primary" id="registerBtn">Cadastrar</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-background">
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Conectando <span class="gradient-text">Talentos</span> e 
+                    <span class="gradient-text">Oportunidades</span> em Saquarema
+                </h1>
+                <p class="hero-subtitle">
+                    A plataforma que une trabalhadores locais a empregadores de forma 
+                    <span class="highlight">rápida, segura e digital</span>
+                </p>
+                
+                <!-- Imagem abaixo do H1 -->
+                <div class="hero-image-main">
+                    <div class="image-container">
+                        <img src="assets/images/hero-image.jpg" 
+                             alt="Sconnect - Conectando profissionais em Saquarema"
+                             onerror="this.src='https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'">
+                        <div class="image-overlay">
+                            <div class="floating-card card-1">
+                                <div class="card-icon">👷</div>
+                                <span>Encontre Trabalho</span>
+                            </div>
+                            <div class="floating-card card-2">
+                                <div class="card-icon">💼</div>
+                                <span>Contrate Talentos</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <div class="card-icon">⭐</div>
+                                <span>Avaliações Reais</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-employer" id="employerBtn">
+                        <span class="btn-icon">📊</span>
+                        <span class="btn-text">Quero Contratar</span>
+                    </button>
+                    <button class="btn btn-worker" id="workerBtn">
+                        <span class="btn-icon">👷</span>
+                        <span class="btn-text">Quero Trabalhar</span>
+                    </button>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="580">0</span>
+                        <span class="stat-label">Profissionais</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="1200">0</span>
+                        <span class="stat-label">Serviços Realizados</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="48">0</span>
+                        <span class="stat-label">Avaliação Média</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: O Problema -->
+    <section class="problem-section" id="problema">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O Desafio do Desemprego em <span class="gradient-text">Saquarema</span></h2>
+                <p class="section-subtitle">Entendemos a realidade local para criar a solução certa</p>
+            </div>
+            
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">📊</div>
+                    <h3>Desemprego Elevado</h3>
+                    <p>Taxa de desemprego de 18% na região, acima da média nacional, afetando principalmente jovens e trabalhadores informais.</p>
+                    <div class="problem-stat">
+                        <span class="stat-big">18%</span>
+                        <span class="stat-label">Taxa de Desemprego</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon">🚫</div>
+                    <h3>Falta de Conexão</h3>
+                    <p>Trabalhadores qualificados não são encontrados por empregadores locais, criando um gap entre oferta e demanda.</p>
+                    <div class="problem-stat">
+                        <span class="stat-big">67%</span>
+                        <span class="stat-label">Busca por indicações</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon">💸</div>
+                    <h3>Economia Parada</h3>
+                    <p>Renda circulando fora da cidade porque não há um sistema eficiente para conectar talentos locais a oportunidades locais.</p>
+                    <div class="problem-stat">
+                        <span class="stat-big">42%</span>
+                        <span class="stat-label">Serviços terceirizados</span>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="problem-icon">📱</div>
+                    <h3>Exclusão Digital</h3>
+                    <p>Plataformas nacionais são complexas e não atendem às necessidades específicas do mercado hyperlocal de Saquarema.</p>
+                    <div class="problem-stat">
+                        <span class="stat-big">85%</span>
+                        <span class="stat-label">Uso apenas do WhatsApp</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Nossa Solução -->
+    <section class="solution-section" id="solucao">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como o Sconnect <span class="gradient-text">Resolve</span> Esses Problemas</h2>
+                <p class="section-subtitle">Uma abordagem inovadora desenvolvida especificamente para Saquarema</p>
+            </div>
+            
+            <div class="solution-features">
+                <div class="solution-card">
+                    <div class="solution-number">01</div>
+                    <h3>Tecnologia Hyperlocal</h3>
+                    <p>Algoritmo de matching que prioriza conexões dentro de Saquarema, entendendo as dinâmicas específicas de cada bairro.</p>
+                    <ul class="feature-list">
+                        <li>📍 Busca por proximidade geográfica</li>
+                        <li>🏘️ Entendimento dos bairros locais</li>
+                        <li>🚗 Otimização de deslocamento</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-number">02</div>
+                    <h3>Sistema de Reputação Comunitária</h3>
+                    <p>Avaliações verificadas e sistema de confiança que reproduz digitalmente a cultura local de indicações.</p>
+                    <ul class="feature-list">
+                        <li>⭐ Avaliações após cada serviço</li>
+                        <li>🛡️ Perfis verificados</li>
+                        <li>📈 Histórico de trabalhos</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-number">03</div>
+                    <h3>Pagamento Integrado e Seguro</h3>
+                    <p>Sistema financeiro que garante segurança para ambas as partes e mantém o dinheiro circulando localmente.</p>
+                    <ul class="feature-list">
+                        <li>💰 PIX integrado</li>
+                        <li>🛡️ Pagamento protegido</li>
+                        <li>📊 Controle financeiro</li>
+                    </ul>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="solution-number">04</div>
+                    <h3>Interface Simples e Acessível</h3>
+                    <p>Plataforma desenvolvida para ser usada por todos, mesmo aqueles com pouca experiência digital.</p>
+                    <ul class="feature-list">
+                        <li>📱 Design intuitivo</li>
+                        <li>🎯 Navegação simplificada</li>
+                        <li>📞 Suporte local</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Diferenciais Inovadores -->
+    <section class="innovation-section" id="diferenciais">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O que Nos Torna <span class="gradient-text">Únicos</span></h2>
+                <p class="section-subtitle">Inovações que nenhuma outra plataforma oferece em Saquarema</p>
+            </div>
+            
+            <div class="innovation-grid">
+                <div class="innovation-card">
+                    <div class="innovation-header">
+                        <div class="innovation-icon">🎯</div>
+                        <h3>Matching Inteligente</h3>
+                    </div>
+                    <p>Nosso algoritmo não apenas conecta, mas aprende com as preferências locais para fazer matches cada vez mais precisos.</p>
+                    <div class="innovation-points">
+                        <span class="point">Baseado em localização real</span>
+                        <span class="point">Aprendizado contínuo</span>
+                        <span class="point">Recomendações personalizadas</span>
+                    </div>
+                </div>
+                
+                <div class="innovation-card">
+                    <div class="innovation-header">
+                        <div class="innovation-icon">🤝</div>
+                        <h3>Economia de Confiança</h3>
+                    </div>
+                    <p>Criamos um ecossistema onde a reputação digital tem valor real, incentivando serviços de qualidade e pagamentos justos.</p>
+                    <div class="innovation-points">
+                        <span class="point">Sistema de reputação</span>
+                        <span class="point">Mediação de conflitos</span>
+                        <span class="point">Transparência total</span>
+                    </div>
+                </div>
+                
+                <div class="innovation-card">
+                    <div class="innovation-header">
+                        <div class="innovation-icon">📈</div>
+                        <h3>Crescimento Orgânico</h3>
+                    </div>
+                    <p>Quanto mais você usa, mais visibilidade ganha. Sistema progressivo que recompensa atividade e qualidade.</p>
+                    <div class="innovation-points">
+                        <span class="point">Visibilidade progressiva</span>
+                        <span class="point">Recompensas por atividade</span>
+                        <span class="point">Badges de reconhecimento</span>
+                    </div>
+                </div>
+                
+                <div class="innovation-card">
+                    <div class="innovation-header">
+                        <div class="innovation-icon">🌐</div>
+                        <h3>Comunidade Real</h3>
+                    </div>
+                    <p>Não somos apenas uma plataforma, somos uma comunidade. Eventos locais e networking presencial complementam o digital.</p>
+                    <div class="innovation-points">
+                        <span class="point">Eventos comunitários</span>
+                        <span class="point">Networking local</span>
+                        <span class="point">Suporte presencial</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Impacto Social -->
+    <section class="impact-section" id="impacto">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Impacto <span class="gradient-text">Real</span> na Comunidade</h2>
+                <p class="section-subtitle">Transformando a economia local, um match de cada vez</p>
+            </div>
+            
+            <div class="impact-stats">
+                <div class="impact-stat">
+                    <div class="impact-number" data-target="120">0</div>
+                    <div class="impact-label">Empresas Locais Ativas</div>
+                </div>
+                <div class="impact-stat">
+                    <div class="impact-number" data-target="580">0</div>
+                    <div class="impact-label">Trabalhadores Cadastrados</div>
+                </div>
+                <div class="impact-stat">
+                    <div class="impact-number" data-target="285000">0</div>
+                    <div class="impact-label">R$ em Serviços Realizados</div>
+                </div>
+                <div class="impact-stat">
+                    <div class="impact-number" data-target="94">0</div>
+                    <div class="impact-label">% de Satisfação</div>
+                </div>
+            </div>
+            
+            <div class="impact-testimonials">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Consegui minha primeira renda fixa através do Sconnect. Em uma semana já tinha mais clientes do que em um mês de busca tradicional."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👷</div>
+                        <div class="author-info">
+                            <strong>Carlos, Eletricista</strong>
+                            <span>Centro - Saquarema</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Reformei toda minha pousada encontrando profissionais qualificados aqui. O sistema de avaliações me deu segurança para contratar."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">🏨</div>
+                        <div class="author-info">
+                            <strong>Ana, Pousada Maré Alta</strong>
+                            <span>Itaúna - Saquarema</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Call to Action Final -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Pronto para Transformar a Economia de Saquarema?</h2>
+                <p class="cta-subtitle">Junte-se à revolução do trabalho local. Cadastre-se gratuitamente e comece a conectar-se hoje mesmo.</p>
+                
+                <div class="cta-buttons">
+                    <button class="btn btn-employer btn-large" id="finalEmployerBtn">
+                        <span class="btn-icon">💼</span>
+                        <span class="btn-text">Sou Empresa</span>
+                    </button>
+                    <button class="btn btn-worker btn-large" id="finalWorkerBtn">
+                        <span class="btn-icon">👷</span>
+                        <span class="btn-text">Sou Profissional</span>
+                    </button>
+                </div>
+                
+                <div class="cta-features">
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Cadastro gratuito</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Primeiro match em 24h</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Suporte local</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-s">S</span><span class="logo-connect">connect</span>
+                    </div>
+                    <p class="footer-description">
+                        Conectando talentos e oportunidades em Saquarema. Juntos, construímos uma economia local mais forte.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Plataforma</h4>
+                        <a href="#inicio">Início</a>
+                        <a href="#problema">O Problema</a>
+                        <a href="#solucao">Solução</a>
+                        <a href="#diferenciais">Diferenciais</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Recursos</h4>
+                        <a href="#">Para Empresas</a>
+                        <a href="#">Para Trabalhadores</a>
+                        <a href="#">Preços</a>
+                        <a href="#">Blog</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <a href="#">Central de Ajuda</a>
+                        <a href="#">Contato</a>
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Termos de Uso</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sconnect. Todos os direitos reservados. Feito com ❤️ para Saquarema.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
