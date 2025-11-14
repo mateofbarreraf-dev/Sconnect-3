@@ -1,4 +1,4 @@
-// JavaScript para funcionalidades da landing page expandida
+
 document.addEventListener('DOMContentLoaded', function() {
     // Elementos DOM
     const loginBtn = document.getElementById('loginBtn');
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const statNumbers = document.querySelectorAll('.stat-number');
     const impactNumbers = document.querySelectorAll('.impact-number');
 
-    // Smooth scroll para links internos
+   
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Contadores animados para estatísticas do hero
+   
     function animateCounter(element, target, duration) {
         let start = 0;
         const increment = target / (duration / 16);
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 element.textContent = isDecimal ? target.toFixed(1) : target.toLocaleString();
                 clearInterval(timer);
                 
-                // Efeito de pulso ao completar
+              
                 element.style.transform = 'scale(1.1)';
                 setTimeout(() => {
                     element.style.transform = 'scale(1)';
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 16);
     }
 
-    // Observador para animar contadores do hero
+    
     const heroObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     heroObserver.observe(document.querySelector('.hero-stats'));
 
-    // Observador para animar contadores de impacto
+  
     const impactObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     impactObserver.observe(document.querySelector('.impact-section'));
 
-    // Animação de fade-in para seções
+    
     const fadeElements = document.querySelectorAll('.problem-card, .solution-card, .innovation-card, .testimonial-card');
     
     const fadeObserver = new IntersectionObserver((entries) => {
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fadeObserver.observe(element);
     });
 
-    // Event Listeners para botões
+    
     const buttons = [loginBtn, registerBtn, employerBtn, workerBtn, finalEmployerBtn, finalWorkerBtn];
     
     buttons.forEach(button => {
@@ -139,15 +139,15 @@ document.addEventListener('DOMContentLoaded', function() {
         showNotification(message);
     }
 
-    // Sistema de notificação moderna
+    
     function showNotification(message) {
-        // Remove notificação existente
+       
         const existingNotification = document.querySelector('.notification');
         if (existingNotification) {
             existingNotification.remove();
         }
 
-        // Cria nova notificação
+      
         const notification = document.createElement('div');
         notification.className = 'notification';
         notification.innerHTML = `
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
 
-        // Estilos da notificação
+        
         notification.style.cssText = `
             position: fixed;
             top: 100px;
@@ -176,12 +176,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.body.appendChild(notification);
 
-        // Animação de entrada
+        
         setTimeout(() => {
             notification.style.transform = 'translateX(0)';
         }, 100);
 
-        // Remove após 3 segundos
+       
         setTimeout(() => {
             notification.style.transform = 'translateX(400px)';
             setTimeout(() => {
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 3000);
     }
 
-    // Header scroll effect melhorado
+    
     window.addEventListener('scroll', function() {
         const header = document.querySelector('header');
         const scrollY = window.scrollY;
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Efeito de brilho interativo
+  
     const glow = document.querySelector('.hero-glow');
     if (glow) {
         document.addEventListener('mousemove', (e) => {
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Efeito de hover nos cards
+
     const cards = document.querySelectorAll('.problem-card, .solution-card, .innovation-card, .impact-stat');
     
     cards.forEach(card => {
@@ -234,17 +234,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Inicialização quando a página carrega
+   
     window.addEventListener('load', function() {
         document.body.classList.add('loaded');
         
-        // Adiciona delay para animações iniciais
+        
         setTimeout(() => {
             document.querySelector('.hero-content').classList.add('loaded');
         }, 500);
     });
 
-    // Efeito de digitação no subtítulo (opcional)
+   
     function typeWriterEffect(element, text, speed = 30) {
         let i = 0;
         element.textContent = '';
@@ -259,15 +259,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }, speed);
     }
 
-    // Iniciar efeito de digitação se desejado
-    // const subtitle = document.querySelector('.hero-subtitle');
-    // if (subtitle) {
-    //     const originalText = subtitle.textContent;
-    //     typeWriterEffect(subtitle, originalText, 40);
-    // }
+   
 });
 
-// Função para formatação de números grandes
+
 function formatNumber(num) {
     if (num >= 1000000) {
         return (num / 1000000).toFixed(1) + 'M';
@@ -277,4 +272,5 @@ function formatNumber(num) {
     }
     return num.toString();
 }
+
 
