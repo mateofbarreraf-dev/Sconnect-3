@@ -1,4 +1,4 @@
-/* ===== RESET E CONFIGURAÇÕES GERAIS ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 :root {
-    /* Cores do Tema Escuro Moderno */
+   
     --primary: #6366f1;
     --primary-dark: #4f46e5;
     --secondary: #10b981;
@@ -28,7 +28,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== HEADER ===== */
+
 header {
     background: rgba(10, 10, 10, 0.95) !important;
     backdrop-filter: blur(20px);
@@ -123,7 +123,7 @@ header {
     background: var(--primary-dark);
 }
 
-/* ===== HERO SECTION ===== */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -174,7 +174,7 @@ header {
     font-weight: 600;
 }
 
-/* Imagem Principal */
+
 .hero-image-main {
     margin: 3rem 0;
     position: relative;
@@ -197,7 +197,7 @@ header {
     display: block;
 }
 
-/* Botões Hero */
+
 .hero-buttons {
     display: flex;
     gap: 1.5rem;
@@ -230,7 +230,7 @@ header {
     background: #059669;
 }
 
-/* Stats */
+
 .hero-stats {
     display: flex;
     justify-content: center;
@@ -267,7 +267,7 @@ header {
     background: var(--dark-border);
 }
 
-/* ===== SEÇÃO PROBLEMA ===== */
+
 .problem-section {
     padding: 80px 0;
     background: var(--dark-surface);
@@ -348,7 +348,7 @@ header {
     display: block;
 }
 
-/* ===== SEÇÃO SOLUÇÃO ===== */
+
 .solution-section {
     padding: 80px 0;
     background: var(--dark-bg);
@@ -415,7 +415,7 @@ header {
     font-weight: bold;
 }
 
-/* ===== SEÇÃO INOVAÇÃO ===== */
+
 .innovation-section {
     padding: 80px 0;
     background: var(--dark-surface);
@@ -477,7 +477,7 @@ header {
     font-size: 0.9rem;
 }
 
-/* ===== SEÇÃO IMPACTO ===== */
+
 .impact-section {
     padding: 80px 0;
     background: var(--dark-bg);
@@ -561,7 +561,7 @@ header {
     font-size: 0.8rem;
 }
 
-/* ===== CALL TO ACTION ===== */
+
 .cta-section {
     padding: 80px 0;
     background: linear-gradient(135deg, var(--dark-bg) 0%, #1a1a2e 100%);
@@ -621,7 +621,7 @@ header {
     font-weight: bold;
 }
 
-/* ===== FOOTER ===== */
+
 .footer {
     background: var(--dark-surface);
     border-top: 1px solid var(--dark-border);
@@ -677,7 +677,7 @@ header {
     color: var(--text-secondary);
 }
 
-/* ===== RESPONSIVIDADE ===== */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -768,4 +768,5 @@ header {
     .nav-container {
         padding: 1rem;
     }
+
 }
