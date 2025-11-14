@@ -61,11 +61,11 @@ sconnect-landingpage/
 👥 Desenvolvido por
 
 Equipe Sconnect
-
+email para contato: paulopaulogtl@gmail.com
 [Mateo Felipe Barrera Forero]
 [Paulo Victor Da Cunha Balthar]
 [Juan Sebastian Barrera Forero]
-[Lucas Gomes]
+[Lucas Gomes bravo Monteiro]
 
 Orientador: João 
 Disciplina: Lab Desenvolvimento de Web Sites
