@@ -62,10 +62,10 @@ sconnect-landingpage/
 
 Equipe Sconnect
 
-Mateo Felipe Barrera Forero
-Paulo Victor Da Cunha Balthar
-Juan Sebastian Barrera Forero
-Lucas Gomes
+[Mateo Felipe Barrera Forero]
+[Paulo Victor Da Cunha Balthar]
+[Juan Sebastian Barrera Forero]
+[Lucas Gomes]
 
 Orientador: João 
 Disciplina: Lab Desenvolvimento de Web Sites
